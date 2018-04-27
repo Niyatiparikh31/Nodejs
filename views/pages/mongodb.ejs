@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<div class="container">
+    <h2>Database Results getting Routes </h2>
+    <ul>
+        <% results.forEach(function(r) { %>
+        <li><%= r.name %> - <%= r.frequency %>
+            From:(<%=r.START_longitude %>, <%=r.START_latitude %> )
+            TO:(:(<%=r.STOP_longitude %>,<%=r.STOP_latitude %>) </li>
+        <% }); %>
+    </ul>
+</div>
+</body>
+</html>
+
