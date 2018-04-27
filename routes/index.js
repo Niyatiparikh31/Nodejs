@@ -17,7 +17,7 @@ module.exports = router;
 //      and sort by the name of the route.  Render information in the views/pages/mongodb.ejs
 router.get('/mongodb', function (request, response) {
 
-    mongodb.MongoClient.connect('mongodb://heroku_njmbv2gs:962hpsg6iqt144v4t5dc3tbtk0@ds229648.mlab.com:29648/heroku_njmbv2g', function(err, client) {
+    mongodb.MongoClient.connect('mongodb://heroku_k1gg7r2k:qttc0roe5bv03ivsree0svqag8@ds259089.mlab.com:59089/heroku_k1gg7r2k', function(err, client) {
         // mongodb.MongoClient.connect(process.env.MONGODB_URI, function(err, db) {  // works with mongodb v2 but not v3
         if(err) throw err;
         //get collection of routes
